@@ -15,9 +15,29 @@ public static Connection conectar() {
          c = DriverManager.getConnection("jdbc:sqlite:/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db");
         
  	    stmt = c.createStatement();
- 	    String sql = "CREATE TABLE IF NOT EXISTS USUARIO (NAME VARCHAR(100),EMAIL VARCHAR(100),PASSWORD VARCHAR(50)"
+ 	    String sql = "CREATE TABLE IF NOT EXISTS USUARIO (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME VARCHAR(100),EMAIL VARCHAR(100),PASSWORD VARCHAR(50)"
  	    		+ ");"; 
  	    stmt.executeUpdate(sql);
+ 	   System.out.println("Creada tabla usuarios");
+ 	    String sql_cursos = "CREATE TABLE IF NOT EXISTS CURSOS (\n" + 
+ 	    		"REF INTEGER PRIMARY KEY AUTOINCREMENT,\n" + 
+ 	    		"NAME VARCHAR(100),\n" + 
+ 	    		"PRODUCTS VARCHAR(100),\n" + 
+ 	    		"PAYMENT VARCHAR(100),\n" + 
+ 	    		"GRADE INTEGER(1),\n" + 
+ 	    		"AMOUNT INTEGER(10) DEFAULT 0,\n" + 
+ 	    		"CONSTRAINT FK_NAME FOREIGN KEY (NAME) REFERENCES USUARIO(NAME)\n" + 
+ 	    		");";
+ 	   stmt.executeUpdate(sql_cursos);
+ 	  System.out.println("Creada tabla cursos");
+ 	  String sql_comments = "CREATE TABLE IF NOT EXISTS COMENTARIOS (\n" + 
+ 	  		"REF INTEGER PRIMARY KEY AUTOINCREMENT,\n" + 
+ 	  		"NAME VARCHAR(100),\n" + 
+ 	  		"COMMENTS VARCHAR(500),\n" + 
+ 	  		"CONSTRAINT FK_NAME_COMMENTS FOREIGN KEY (NAME) REFERENCES USUARIO(NAME)\n" + 
+ 	  		");";
+	   stmt.executeUpdate(sql_comments);
+	  System.out.println("Creada tabla comentarios");
      	System.out.println("Conectado a la bbdd");
          return c;
       } catch ( Exception e ) {

@@ -38,7 +38,7 @@ and open the template in the editor.
 		</div>
 	</nav>
 
-	<form style="margin: 0 auto; width: 900px;margin-bottom: 50px;" action="" method="POST">
+	<form style="margin: 0 auto; width: 900px;margin-bottom: 50px;" action="/Cursos2/Reservar" method="POST">
 		<fieldset style="border: 2px solid #eee;padding:10px;">
 			<legend>POST FORM</legend>
 			<div class="form-check" style="height: 200px;">
@@ -46,37 +46,36 @@ and open the template in the editor.
 				<label class="form-check-label" for="defaultCheck1"
 					style="text-align: center; vertical-align: middle;"> <img
 					src="img_cursos/captura.jpg" width="150" height="150" /> <input
-					class="form-check-input" type="checkbox" value=""
-					id="defaultCheck1">
+					class="form-check-input" type="checkbox" name="Curso1" value="Curso1"
+					id="Curso1">
 				</label> <label class="form-check-label" for="defaultCheck1"
 					style="text-align: center; vertical-align: middle;"> <img
 					src="img_cursos/cursos-black-friday.png" width="150" height="150" />
-					<input class="form-check-input" type="checkbox" value=""
-					id="defaultCheck1">
+					<input class="form-check-input" type="checkbox" name="Curso2" value="Curso2"
+					id="Curso2">
 				</label> <label class="form-check-label" for="defaultCheck1"
 					style="text-align: center; vertical-align: middle;"> <img
 					src="img_cursos/cursos-cyber-monday.png" width="150" height="150" />
-					<input class="form-check-input" type="checkbox" value=""
-					id="defaultCheck1">
+					<input class="form-check-input" type="checkbox" name="Curso3" value="Curso3"
+					id="Curso3">
 				</label> <label class="form-check-label" for="defaultCheck1"
 					style="text-align: center; vertical-align: middle;"> <img
 					src="img_cursos/halloween.jpg" width="150" height="150" /> <input
-					class="form-check-input" type="checkbox" value=""
-					id="defaultCheck1">
+					class="form-check-input" type="checkbox" name="Curso4" value="Curso4"
+					id="Curso4">
 				</label> <label class="form-check-label" for="defaultCheck1"
 					style="text-align: center; vertical-align: middle;"> <img
 					src="img_cursos/images.png" width="150" height="150" /> <input
-					class="form-check-input" type="checkbox" value=""
-					id="defaultCheck1">
+					class="form-check-input" type="checkbox" name="Curso5" value="Curso5"
+					id="Curso5">
 				</label>
 			</div>
 			<fieldset>
 			<legend>Payment Mode:</legend>
 			<div class="form-group">
-				<input type="radio" id="cash" name="cash"> <label for="male">Cash</label>
-				<input type="radio" id="credit_card" name="credit_card"> <label
-					for="male">Credit Card</label> <input type="radio" id="paypal"
-					name="paypal" checked> <label for="male">Paypal</label>
+				<input type="radio" id="cash" name="payment" value="cash"> <label for="cash">Cash</label>
+				<input type="radio" id="credit_card" name="payment" value="credit_card"> <label	for="credit_card">Credit Card</label> 
+				<input type="radio" id="paypal"	name="payment" value="paypal" checked > <label for="paypal">Paypal</label>
 			</div>
 			</fieldset>
 			<div class="form-group ">
@@ -103,7 +102,7 @@ and open the template in the editor.
 	</form>
 	
 	
-		<form style="margin: 0 auto; width: 800px;" action="" method="GET">
+		<form style="margin: 0 auto; width: 800px;" action="/Cursos2/Comentar" method="GET">
 		<fieldset style="border: 2px solid #eee;padding:10px;">
 			<legend>GET FORM COMMENTS</legend>
 		

@@ -10,6 +10,18 @@
 			"configuration": {
 				"database": "/home/adrian/eclipse-workspace/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
 				"url": "jdbc:sqlite:/home/adrian/eclipse-workspace/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"type": "dev"
+			}
+		},
+		"sqlite_jdbc-170c0a9bcbe-4eb245201ed60333": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - bbdd.db 2",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"url": "jdbc:sqlite:/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
 				"type": "dev",
 				"handlers": {}
 			}
