@@ -12,7 +12,7 @@ public static Connection conectar() {
 	  Statement stmt = null;
       try {
          Class.forName("org.sqlite.JDBC");
-         c = DriverManager.getConnection("jdbc:sqlite:/home/adrian/eclipse-workspace/Cursos2/WebContent/WEB-INF/lib/bbdd.db");
+         c = DriverManager.getConnection("jdbc:sqlite:/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db");
         
  	    stmt = c.createStatement();
  	    String sql = "CREATE TABLE IF NOT EXISTS USUARIO (NAME VARCHAR(100),EMAIL VARCHAR(100),PASSWORD VARCHAR(50)"

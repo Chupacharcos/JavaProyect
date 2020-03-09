@@ -5,19 +5,147 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>CURSOS</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    </head>
-   <body>
-       <h1>OFERTA DE CURSOS</h1>
-   
-  
-  
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+<head>
+<title>CURSOS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+		<a class="navbar-brand" href="#">Cursos</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse mr-auto float-right"
+			id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item"><a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="registro.html">Sign
+						in</a></li>
+				<li class="nav-item"><a class="nav-link" href="oferta.html">Oferta
+						cursos</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<form style="margin: 0 auto; width: 900px;margin-bottom: 50px;" action="" method="POST">
+		<fieldset style="border: 2px solid #eee;padding:10px;">
+			<legend>POST FORM</legend>
+			<div class="form-check" style="height: 200px;">
+
+				<label class="form-check-label" for="defaultCheck1"
+					style="text-align: center; vertical-align: middle;"> <img
+					src="img_cursos/captura.jpg" width="150" height="150" /> <input
+					class="form-check-input" type="checkbox" value=""
+					id="defaultCheck1">
+				</label> <label class="form-check-label" for="defaultCheck1"
+					style="text-align: center; vertical-align: middle;"> <img
+					src="img_cursos/cursos-black-friday.png" width="150" height="150" />
+					<input class="form-check-input" type="checkbox" value=""
+					id="defaultCheck1">
+				</label> <label class="form-check-label" for="defaultCheck1"
+					style="text-align: center; vertical-align: middle;"> <img
+					src="img_cursos/cursos-cyber-monday.png" width="150" height="150" />
+					<input class="form-check-input" type="checkbox" value=""
+					id="defaultCheck1">
+				</label> <label class="form-check-label" for="defaultCheck1"
+					style="text-align: center; vertical-align: middle;"> <img
+					src="img_cursos/halloween.jpg" width="150" height="150" /> <input
+					class="form-check-input" type="checkbox" value=""
+					id="defaultCheck1">
+				</label> <label class="form-check-label" for="defaultCheck1"
+					style="text-align: center; vertical-align: middle;"> <img
+					src="img_cursos/images.png" width="150" height="150" /> <input
+					class="form-check-input" type="checkbox" value=""
+					id="defaultCheck1">
+				</label>
+			</div>
+			<fieldset>
+			<legend>Payment Mode:</legend>
+			<div class="form-group">
+				<input type="radio" id="cash" name="cash"> <label for="male">Cash</label>
+				<input type="radio" id="credit_card" name="credit_card"> <label
+					for="male">Credit Card</label> <input type="radio" id="paypal"
+					name="paypal" checked> <label for="male">Paypal</label>
+			</div>
+			</fieldset>
+			<div class="form-group ">
+				<div class="row">
+					<div class="col-md-3">
+						<label for="exampleInputEmail1">Nick</label> <input type="text"
+							class="form-control" id="nick" aria-describedby="nick"
+							placeholder="Enter nick">
+					</div>
+					<div class="col-md-3">
+						<label for="exampleInputEmail1">Grade</label> <input type="number"
+							class="form-control" id="grade" aria-describedby="grade"
+							placeholder="Enter grade" min="1" max="5">
+					</div>
+					<div class="col-md-3" style="margin-top: 2em;">
+						<input type="submit" class="form-control" id="submit_post"
+							aria-describedby="submit_post" value="Send">
+					</div>
+				</div>
+			</div>
+
+	
+			</fieldset>
+	</form>
+	
+	
+		<form style="margin: 0 auto; width: 800px;" action="" method="GET">
+		<fieldset style="border: 2px solid #eee;padding:10px;">
+			<legend>GET FORM COMMENTS</legend>
+		
+	
+			<div class="form-group ">
+				<div class="row">
+					<div class="col-md-3">
+						<label for="exampleInputEmail1">Nick</label> <input type="text"
+							class="form-control" id="nick_get" aria-describedby="nick"
+							placeholder="Enter nick">
+					</div>
+				
+					<div class="col-md-3" style="margin-top: 2em;">
+						<input type="submit" class="form-control" id="submit_post"
+							aria-describedby="submit_post" value="Send">
+					</div>
+					
+					<div class="col-md-3" style="margin-top: 2em;">
+						<input type="submit" class="form-control" id="submit_post"
+							aria-describedby="submit_post" value="Delete">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Example textarea</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1"
+					rows="3"></textarea>
+			</div>
+			</fieldset>
+	</form>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+</body>
 </html>

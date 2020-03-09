@@ -12,18 +12,40 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
    <body>
-<form class="form-inline" action="/Cursos2/Login" method="get">
-  <div class="form-group form-inline">
+           <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" href="#">Cursos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse mr-auto float-right" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+      </li>
+<li class="nav-item">
+        <a class="nav-link" href="registro.html">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="oferta.html">Oferta cursos</a>
+      </li>
+    </ul>
+      
+  </div>
+  </nav>
+<form  action="/Cursos2/Login" method="get" style="margin: 0 auto; width: 500px;">
+  <div class="form-group">
     <label for="exampleInputEmail1">User</label>
     <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" required="">
   
   </div>
-  <div class="form-group form-inline">
+  <div class="form-group ">
     <label for="exampleInputPassword1">Password</label>
     <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
   </div>
 
   <button type="submit" class="btn btn-primary">Conectar</button>
+  
 </form>
   
   
