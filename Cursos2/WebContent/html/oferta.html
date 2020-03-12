@@ -82,12 +82,12 @@ and open the template in the editor.
 				<div class="row">
 					<div class="col-md-3">
 						<label for="exampleInputEmail1">Nick</label> <input type="text"
-							class="form-control" id="nick" aria-describedby="nick"
+							class="form-control" id="nick" name="nick" aria-describedby="nick"
 							placeholder="Enter nick">
 					</div>
 					<div class="col-md-3">
 						<label for="exampleInputEmail1">Grade</label> <input type="number"
-							class="form-control" id="grade" aria-describedby="grade"
+							class="form-control" id="grade"name="grade" aria-describedby="grade"
 							placeholder="Enter grade" min="1" max="5">
 					</div>
 					<div class="col-md-3" style="margin-top: 2em;">
@@ -111,7 +111,7 @@ and open the template in the editor.
 				<div class="row">
 					<div class="col-md-3">
 						<label for="exampleInputEmail1">Nick</label> <input type="text"
-							class="form-control" id="nick_get" aria-describedby="nick"
+							class="form-control" name="nick_comments" id="nick_get" aria-describedby="nick"
 							placeholder="Enter nick">
 					</div>
 				
@@ -121,15 +121,15 @@ and open the template in the editor.
 					</div>
 					
 					<div class="col-md-3" style="margin-top: 2em;">
-						<input type="submit" class="form-control" id="submit_post"
+						<input type="submit" class="form-control" id="delete_post"
 							aria-describedby="submit_post" value="Delete">
 					</div>
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="exampleFormControlTextarea1">Example textarea</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1"
+				<label for="exampleFormControlTextarea1">Comentarios</label>
+				<textarea class="form-control" name="comments" id="exampleFormControlTextarea1"
 					rows="3"></textarea>
 			</div>
 			</fieldset>
