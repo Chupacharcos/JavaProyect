@@ -22,7 +22,21 @@
 			"configuration": {
 				"database": "/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
 				"url": "jdbc:sqlite:/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"type": "dev"
+			}
+		},
+		"sqlite_jdbc-17163b8ece0-1e7903e9237e9bd3": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - bbdd.db 3",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"database": "C:\\Users\\Adrian\\git\\m8\\Cursos2\\WebContent\\WEB-INF\\lib\\bbdd.db",
+				"url": "jdbc:sqlite:C:\\Users\\Adrian\\git\\m8\\Cursos2\\WebContent\\WEB-INF\\lib\\bbdd.db",
 				"type": "dev",
+				"auth-model": "native",
 				"handlers": {}
 			}
 		}
