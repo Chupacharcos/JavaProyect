@@ -1,0 +1,40 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-170a17f2221-5334cd683ad34ec1": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - bbdd.db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/home/adrian/eclipse-workspace/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"url": "jdbc:sqlite:/home/adrian/eclipse-workspace/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"type": "dev"
+			}
+		},
+		"sqlite_jdbc-170c0a9bcbe-4eb245201ed60333": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - bbdd.db 2",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"url": "jdbc:sqlite:/home/adrian/git/m8/Cursos2/WebContent/WEB-INF/lib/bbdd.db",
+				"type": "dev",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
