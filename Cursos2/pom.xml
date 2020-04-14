@@ -7,6 +7,7 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+    
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
@@ -22,12 +23,18 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
     </plugins>
   </build>
-  <properties>
+<properties>
   <sonar.projectKey>Chupacharcos_m8</sonar.projectKey>
   <sonar.organization>chupacharcos</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <sonar.login>5bdec42349f3dca03a5a8d2607f5a9c241553284</sonar.login>
+  <sonar.login>1b18f41bdce4af4609638e1f05e5875a8ba42ac2</sonar.login>
 </properties>
+
 </project>
