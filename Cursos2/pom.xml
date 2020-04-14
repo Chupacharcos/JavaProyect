@@ -24,4 +24,10 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+  <sonar.projectKey>Chupacharcos_m8</sonar.projectKey>
+  <sonar.organization>chupacharcos</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>5bdec42349f3dca03a5a8d2607f5a9c241553284</sonar.login>
+</properties>
 </project>
