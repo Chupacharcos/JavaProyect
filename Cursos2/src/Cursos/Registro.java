@@ -14,8 +14,30 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Registro
  */
+
 @WebServlet("/Registro")
 public class Registro extends HttpServlet {
+	public static boolean comprobarNombre(String name) {
+		if (name.matches("[a-zA-Z0-9]{3,10}")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+	public static boolean comprobarPass(String password) {
+		if (password.matches("[a-zA-Z0-9]{8,}")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+	public static boolean comprobarEmail(String email) {
+		if (email.matches("^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -23,9 +45,10 @@ public class Registro extends HttpServlet {
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
-
-		if (name.matches("[a-zA-Z0-9]{3,10}") && password.matches("[a-zA-Z0-9]{8,}")
-				&& email.matches("[^@]+@[^\\.]+\\..+")) {
+//METER LOS MATCHES EN FUNCIONES PARA LOS TEST
+		
+		if (comprobarNombre(name) && comprobarPass(password)
+				&& comprobarEmail(email)) {
 			try {
 				Connection c = SQLiteJDBC.conectar();
 				Statement stmt = null;
