@@ -17,6 +17,11 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/Registro")
 public class Registro extends HttpServlet {
+	/**
+	 * 
+	 * @param name
+	 * @return true o false si el name coincide con exp reg
+	 */
 	public static boolean comprobarNombre(String name) {
 		if (name.matches("[a-zA-Z0-9]{3,10}")) {
 			return true;
@@ -24,6 +29,11 @@ public class Registro extends HttpServlet {
 			return false;
 		}
 	}
+	/**
+	 * 
+	 * @param password
+	 * @return true o false si el password coincide con exp reg
+	 */
 	public static boolean comprobarPass(String password) {
 		if (password.matches("[a-zA-Z0-9]{8,}")) {
 			return true;
@@ -31,6 +41,11 @@ public class Registro extends HttpServlet {
 			return false;
 		}
 	}
+	/**
+	 * 
+	 * @param email
+	 * @return true o false si el email coincide con exp reg
+	 */
 	public static boolean comprobarEmail(String email) {
 		if (email.matches("^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$")) {
 			return true;
